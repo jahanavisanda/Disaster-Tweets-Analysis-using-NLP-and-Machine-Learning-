@@ -1,1 +1,12 @@
-# Disaster-Tweets-Analysis-using-NLP-and-Machine-Learning-
+# Disaster-Tweets-Analysis-using-NLP-and-Machine-Learning
+1. **Data Collection**: The project collects a dataset of 2321 tweets posted by users during the Texas winter storm 2021 . These tweets serve as a valuable source of information to analyze the emotions and sentiments expressed during the disaster.
+
+2. **Pre-processing**: The collected tweets undergo several pre-processing steps to prepare them for analysis. This includes tokenization, where tweets are converted into arrays of words to facilitate comprehension by the machine learning model . Text normalization is also performed to regularize words, such as converting "raining" to "rain" and "is/am/I/are/we" to "be" . Additionally, stop words, which are words with little significant meaning, are removed using the nltk package to make the text more concise and efficient .
+
+3. **Feature Extraction**: In this step, the project aims to represent the tweet data not as words but as relative statistics that can be used as features for modeling . One-hot coding, also known as Bag of Words, is applied to represent the data in a simplified form . This step is critical in the natural language processing (NLP) simplification process.
+
+4. **Tweet Classification**: The project utilizes machine learning algorithms, including Support Vector Machines, Decision Trees, and Random Forest classifiers, to classify the disaster-related tweets into different categories based on their context . These algorithms are trained on manually labeled tweets to learn patterns and make predictions on new, unlabeled tweets . The accuracy of the classification model is reported to be 82% using the SVM classifier .
+
+5. **Sentiment Analysis**: In addition to tweet classification, sentiment analysis is performed on specific tweet categories to understand the concentration of negative sentiment . This analysis provides insights into the emotions expressed by individuals during the disaster, with a focus on identifying the dominant sentiment in different categories .
+
+6. **Future Work**: The project acknowledges some limitations, such as class imbalance between categories and the potential for further improving the accuracy of the classification model . Future work may involve addressing these limitations by implementing techniques like under-sampling or obtaining more data for the required categories . Additionally, the project suggests exploring Neural Network architectures and incorporating multi-label classification to enhance the classification model .
